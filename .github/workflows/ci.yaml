@@ -1,0 +1,20 @@
+name: ci-node
+on: [push]
+jobs:
+  check-application:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repositort 
+        uses: actions/checkout@v4
+
+      - name: Configura o node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Instala dependencias
+        run: npm install
+
+      - name: Executa testes
+        run: npm test
