@@ -1,6 +1,6 @@
 function consultaSiglaEstadoSudeste(estado) {
     const estadoSigla = new Map([
-        ["São Paulo", "SP"],
+        ["Sao Paulo", "SP"],
         ["Rio de Janeiro", "RJ"],
         ["Minas Gerais", "MG"],
         ["Espiríto Santo", "ES"]
