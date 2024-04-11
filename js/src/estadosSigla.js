@@ -16,4 +16,14 @@ function consultaSiglaEstadoSul(estado) {
     ]);
     return estadoSigla.get(estado);
 }
-module.exports = consultaSiglaEstadoSudeste;
+
+function consultaSiglaEstadoCentroOeste(estado) {
+    const estadoSigla = new Map([
+        ["Goiás", "GO"],
+        ["Mato Grosso", "MT"],
+        ["Mato Grosso do Sul", "MS"]        
+    ])
+    return estadoSigla.get(estado)
+}
+
+module.exports = {consultaSiglaEstadoSudeste, consultaSiglaEstadoSul, consultaSiglaEstadoCentroOeste};
