@@ -19,9 +19,9 @@ function consultaSiglaEstadoSul(estado) {
 
 function consultaSiglaEstadoCentroOeste(estado) {
     const estadoSigla = new Map([
-        ["Goiás1", "GO"]        
+        ["Goiás", "GO"]        
     ])
     return estadoSigla.get(estado)
 }
 
-module.exports = {consultaSiglaEstadoSudeste, consultaSiglaEstadoSul};
+module.exports = {consultaSiglaEstadoSudeste, consultaSiglaEstadoSul, consultaSiglaEstadoCentroOeste};
