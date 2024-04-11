@@ -11,7 +11,8 @@ function consultaSiglaEstadoSudeste(estado) {
 function consultaSiglaEstadoSul(estado) {
     const estadoSigla = new Map([
         ["Paraná", "PR"],
-        ["Teste", "TE"]        
+        ["Rio Grande do Sul", "RS"],
+        ["Santa Catarina", "SC"]        
     ]);
     return estadoSigla.get(estado);
 }
