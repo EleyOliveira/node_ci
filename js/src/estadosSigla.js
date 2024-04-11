@@ -19,7 +19,9 @@ function consultaSiglaEstadoSul(estado) {
 
 function consultaSiglaEstadoCentroOeste(estado) {
     const estadoSigla = new Map([
-        ["Goiás", "GO"]        
+        ["Goiás", "GO"],
+        ["Mato Grosso", "MT"],
+        ["Mato Grosso do Sul", "MS"]        
     ])
     return estadoSigla.get(estado)
 }
