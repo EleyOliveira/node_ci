@@ -19,3 +19,11 @@ test("a sigla do Espiríto Santo deve ser ES", ()=> {
 test("a sigla do Paraná deve ser PR", ()=> {
   expect(consultaSiglaEstadoSul("Paraná")).toBe("PR");    
 });
+
+test("a sigla do Rio Grande do Sul deve ser RS", ()=> {
+  expect(consultaSiglaEstadoSul("Rio Grande do Sul")).toBe("RS");    
+});
+
+test("a sigla de Santa Catarina deve ser SC", ()=> {
+  expect(consultaSiglaEstadoSul("Santa Catarina")).toBe("SC");    
+});
