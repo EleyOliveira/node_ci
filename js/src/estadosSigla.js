@@ -26,4 +26,17 @@ function consultaSiglaEstadoCentroOeste(estado) {
     return estadoSigla.get(estado)
 }
 
-module.exports = {consultaSiglaEstadoSudeste, consultaSiglaEstadoSul, consultaSiglaEstadoCentroOeste};
+function consultaSiglaEstadoNorte(estado) {
+    const estadoSigla = new Map([
+        ["Amapá", "AP"],
+        ["Pará", "PA"],
+        ["Roraima", "RR"],
+        ["Rondônia", "RO"],
+        ["Amazonas", "AM"],
+        ["Acre", "AC"],
+        ["Tocantins", "TO"]
+    ])
+    return estadoSigla.get(estado)
+}
+
+module.exports = {consultaSiglaEstadoSudeste, consultaSiglaEstadoSul, consultaSiglaEstadoCentroOeste, consultaSiglaEstadoNorte};
